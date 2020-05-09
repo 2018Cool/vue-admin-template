@@ -1,0 +1,39 @@
+// theme
+$themeColor: #2772db; // primary颜色
+$danger: #e3504b; // danger颜色
+$primary: $themeColor;
+$tipGray: #909399;
+$--color-primary: $themeColor !default;
+$--color-danger: $danger !default;
+// menu
+$mainBg: #f2f2f2; // 所有页面背景颜色
+$menuBg: #2a394c; //菜单背景
+$headerBg: #18212c; //头部背景色
+$headerHeight: 58px; //头部高度
+$menuHeight: 56px;
+$tableHeight: 49px; // 列表表头高度
+//sidebar
+$sideBarWidth: 180px; //侧边栏高度
+$sideBarBg: #2a394c; //侧边栏背景
+
+$menuText: #bfcbd9;
+$menuActiveText: #d3dbe6;
+$subMenuActiveBg: $themeColor;
+$subMenuActiveText: #f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+$menuHover: #18212c;
+$subMenuBg: #1f2d3d;
+$subMenuHover: #001528;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  $themeColor: themeColor;
+}

@@ -25,6 +25,7 @@ export default {
   width: 100%;
   height:calc(100% - #{$menuHeight});
   overflow-y: auto;
+  overflow-x: hidden;
   padding:25px;
 }
 </style>
